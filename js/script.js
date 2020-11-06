@@ -28,7 +28,7 @@ printMessage(
   "I chosse a " + moves.rock + "! If You choose a " + moves.papper + "You WIN !"
 );
 
-// zrozumiałem o czym mówileś o tablicach. Trzeba znać dokładnie "położenie" elementu, który chcesz wykożystać. Przy obiekcie nie ma tego problemu.
+// zrozumiałem o czym mówiłeś o tablicach. Trzeba znać dokładnie "położenie" elementu, który chcesz wykorzystać. Przy obiekcie nie ma tego problemu.
 
 // Print message using a array moves definition
 
