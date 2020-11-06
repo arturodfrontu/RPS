@@ -33,5 +33,5 @@ printMessage(
 // Print message using a array moves definition
 
 printMessage(
-    "I chosse a " + moves2[0] + "! If You choose a " + moves2.[1] + "You WIN !"
+    "I chosse a " + moves2[0] + "! If You choose a " + moves2[1] + "You WIN !"
 );
