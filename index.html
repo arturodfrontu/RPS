@@ -1,16 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Kamień, papier, nożyce</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="container">
-		<div id="buttons"></div>
-		<div id="messages"></div>
-	</div>
-	<script src="js/functions.js"></script>
-	<script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock, Papper and Scissors Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section class="game">
+
+      <!--Score board-->
+
+      <div class="score-board">
+
+        <!--Showing a player points-->
+
+        <div class="player-points">
+          <h2>Player</h2>
+          <p>0</p>
+        </div>
+
+        <!--Showing a player points end-->
+
+        <!--Showing a computer points-->
+
+        <div class="computer-points">
+          <h2>Computer</h2>
+          <p>0</p>
+        </div>
+
+        <!--Showing a computer points end-->
+      </div>
+
+      <!--Score board end-->
+
+      <!--Intro - invitation section-->
+
+      <div class="intro">
+
+		<h1>
+			Rock, Paper and Scissors<br>
+			Game
+		</h1>
+		<button class="btn">Start battle</button><!--This button start the game-->
+
+      </div>
+
+      <!--Intro end-->
+
+      <!--Battlefield-->
+
+      <div class="battlefield .hide">
+		<h2 class="game-result">Choose an option</h2>
+
+		<!--The weapon selected by the player and the computer is displayed below-->
+
+		<div class="selected-weapon">
+          <span class="player-weapon"><i class="far fa-hand-rock"></i></span>
+          <span class="computer-weapon"><i class="far fa-hand-rock"></i></span>
+		</div>
+
+		<!--Selected weapon end-->
+
+        <!--Battlefield end-->
+
+        <!--Weapon - Here You choose your weapon-->
+
+        <div class="weapons">
+
+          <button class="btn rock">rock</button>
+          <button class="btn paper">paper</button>
+		  <button class="btn scissors">scissors</button>
+
+        </div>
+
+        <!--Weapon end-->
+
+		</div>
+
+	</section>
+
+	<!--scripts-->
+
+    <script src="js/functions.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
