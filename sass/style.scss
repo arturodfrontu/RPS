@@ -49,12 +49,13 @@
     }
 }
 
-.intro {
+.start {
     height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    transition: opacity 0.7s ease;
     h1{
         font-size: 72px;
         font-weight: bold 700;
@@ -67,6 +68,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    transition: opacity 0.7s ease 0.5s;
 }
 
 .game-result {
@@ -95,12 +97,12 @@
     transform: rotateY(180deg);
 }
 
-.hide {
+div.hide {
     opacity: 0;
     pointer-events: none;
 }
 
-.show {
+div.show {
     opacity: 1;
     pointer-events: all;
 }

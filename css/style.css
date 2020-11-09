@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #b32525;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Comfortaa", cursive;
+  color: #b32525;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: ease .6s;
+}
+
+.btn:hover {
+  background-color: #b32525;
+  color: #eeeeee;
+  border-radius: 15px;
+}
+
+.game {
+  background-color: #fff999;
+  font-family: "Comfortaa", cursive;
+  height: 100vh;
+}
+
+.score-board {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.score-board p {
+  text-align: center;
+  padding: 15px 0;
+  color: #b32525;
+  font-size: 36px;
+}
+
+.start {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity 0.7s ease;
+}
+
+.start h1 {
+  font-size: 72px;
+  font-weight: bold 700;
+  text-align: center;
+}
+
+.battlefield {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.7s ease 0.5s;
+}
+
+.game-result {
+  text-align: center;
+  font-size: 48px;
+}
+
+.selected-weapon, .weapons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weapons .btn:nth-of-type(2) {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.selected-weapon {
+  height: 35vh;
+  font-size: 150px;
+}
+
+.computer-weapon {
+  transform: rotateY(180deg);
+}
+
+div.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/*# sourceMappingURL=style.css.map */

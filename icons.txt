@@ -1,0 +1,5 @@
+<i class="far fa-hand-paper"></i>
+
+<i class="far fa-hand-scissors"></i>
+
+<i class="far fa-hand-rock"></i>
