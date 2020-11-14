@@ -9,12 +9,12 @@ let moves = {
 
 // Alternative moves definition
 
-let moves2 = ['rock', 'papper', 'scissors'];
+let alterMoves = ['rock', 'papper', 'scissors']; //zmieniłem nazwę zmiennej
 
 //Variables
 
-let computerMove = "moves.rock";
-let playerMove = "moves.papper";
+let computerMove = moves.rock; //poprawione
+let playerMove = moves.papper;  //poprawione
 
 //Message by KODILLA
 
@@ -33,5 +33,5 @@ printMessage(
 // Print message using a array moves definition
 
 printMessage(
-    "I chosse a " + moves2[0] + "! If You choose a " + moves2[1] + "You WIN !"
+    "I chosse a " + alterMoves[0] + "! If You choose a " + alterMoves[1] + "You WIN !"
 );
