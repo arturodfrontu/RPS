@@ -1,0 +1,107 @@
+
+@import 'partials/fonts';
+@import 'partials/variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border: 5px solid $red;
+    border-radius: 50%;
+    font-size: 28px;
+    font-family: $special-font;
+    color: $red;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: ease .6s;
+    &:hover {
+        background-color: $red;
+        color: $white;
+        border-radius: 25px;
+    }
+}
+
+.game {
+    background-color: #fff999;
+    font-family: $special-font;
+    height: 100vh;
+}
+
+.score-board {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+    p {
+        text-align: center;
+        padding: 15px 0;
+        color:$red;
+        font-size: 48px;
+    }
+}
+
+.start {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.7s ease;
+    h1{
+        font-size: 72px;
+        font-weight: bold 700;
+        text-align: center;
+    }
+}
+.encounter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.7s ease 0.5s;
+    height: 40vh;
+}
+
+.result {
+    text-align: center;
+    font-size: 68px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .btn:nth-of-type(2){
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+.fight {
+    height: 60%;
+    font-size: 130px;
+    margin: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.cpu-fist {
+    transform: rotateZ(-45deg);
+}
+.plr-fist {
+    transform: rotateZ(45deg);
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}

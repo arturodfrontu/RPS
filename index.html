@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock, Papper and Scissors Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section class="game">
+      <div class="score-board">
+        <div class="player-points">
+          <h2>Player</h2>
+          <p>0</p>
+        </div>
+
+        <div class="computer-points">
+          <h2>Computer</h2>
+          <p>0</p>
+        </div>
+      </div>
+
+      <div class="start">
+        <h1>
+         <big>Fists of Fury</big> <br /><small>The coolest version of</small><br />
+          Paper Stone Scissors!
+        </h1>
+
+        <button class="btn">Fight !</button>
+      </div>
+
+      <div class="encounter hide">
+        <h2 class="result">Choose an option</h2>
+
+        <!--The weapon selected by the player and the computer is displayed below-->
+        <div class="fight">
+          <span class="plr-fist"><i class="far fa-hand-rock"></i></span>
+          <span class="cpu-fist"><i class="far fa-hand-rock fa-flip-horizontal"></i></span>
+        </div>
+        <div class="options">
+          <button class="btn rock">rock</button>
+          <button class="btn paper">paper</button>
+          <button class="btn scissors">scissors</button>
+        </div>
+      </div>
+    </section>
+
+    <!--scripts-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
