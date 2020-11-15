@@ -37,10 +37,10 @@ const startEncounter = () => {
       //Here we call compare
       compare(this.textContent, cpuChoice);
 
-      plrFist.classList.remove("fa-hand-rock");
+      plrFist.classList.remove("fa-hand-rock", "fa-hand-paper", "fa-hand-scissors");
       plrFist.classList.add(`fa-hand-${this.textContent}`);
 
-      cpuFist.classList.remove("fa-hand-rock");
+      cpuFist.classList.remove("fa-hand-rock", "fa-hand-paper", "fa-hand-scissors");
       cpuFist.classList.add(`fa-hand-${cpuChoice}`);
     });
   });
